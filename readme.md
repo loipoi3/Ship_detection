@@ -15,15 +15,15 @@ The model is trained on the provided dataset using the following configuration:
 - Learning rate: 0.001
 - Loss function: BCEWithLogitsLoss
 - Batch size: 4
-- Number of epochs: 
+- Number of epochs: 15
 
 During training, accuracy and loss are tracked to track the performance of the model.
 
 ## Accuracy
-After training, the model achieved an accuracy of '''91%''' on the validation set. This accuracy represents the model's ability to correctly classify VIN characters based on the provided dataset.
+After training, the model achieved a f1-metric of 0.08 on the validation set. Based on this value, the model is pretty bad, but I don’t know what the problem could be, for 15 epochs it almost didn’t converge.
 
 ## Usage
-To use the trained model for VIN classification, follow the instructions below:
+To use the trained model for Airbus Ship Detection, follow the instructions below:
 
 1. First go to the project folder using cmd.
 2. Next install virtualenv, write the following command and press Enter:
